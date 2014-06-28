@@ -3354,6 +3354,7 @@ declare module Phaser {
             time: any;
             total: number;
             useElapsedTime: boolean;
+            walls : any;
             world: Phaser.Physics.P2;
 
             addBody(body: Phaser.Physics.P2.Body): boolean;
