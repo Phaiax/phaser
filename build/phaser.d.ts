@@ -1,6 +1,6 @@
 // Type definitions for PIXI 1.5.2
 // Project: https://github.com/GoodBoyDigital/pixi.js/
-// Original 1.3 by: xperiments <http://github.com/xperiments> 
+// Original 1.3 by: xperiments <http://github.com/xperiments>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare module PIXI {
@@ -82,10 +82,10 @@ declare module PIXI {
     export interface IPixiRenderer {
         type: number;
         transparent: boolean;
-        width: number; 
-        height: number; 
+        width: number;
+        height: number;
         view: HTMLCanvasElement;
-        
+
         render(stage: Stage): void;
         resize(width: number, height: number): void;
     }
@@ -1165,7 +1165,7 @@ declare module Phaser {
         textureFrame: Phaser.Frame;
         type: number;
         width: number;
-        
+
         add(object: any): void;
         alphaMask(source: any, mask: any, sourceRect?: Phaser.Rectangle, maskRect?: Phaser.Rectangle): void;
         circle(x: number, y: number, radius: number, fillStyle?: string): void;
@@ -1192,7 +1192,7 @@ declare module Phaser {
         setHSL(h?: number, s?: number, l?: number, region?: Phaser.Rectangle): void;
         setPixel(x: number, y: number, red: number, green: number, blue: number, immediate?: boolean): void;
         setPixel32(x: number, y: number, red: number, green: number, blue: number, alpha: number, immediate?: boolean): void;
-        
+
     }
 
     class BitmapText extends PIXI.BitmapText {
@@ -3674,7 +3674,7 @@ declare module Phaser {
             findPath(startPoint: Phaser.Point, goalPoint: Phaser.Point): Phaser.Plugin.AStar.AStarPath;
             isWalkable(x: number, y: number): boolean;
             setAStarMap(map: Phaser.Tilemap, layerName: string, tilesetName: string): Phaser.Plugin.AStar;
-           
+
         }
 
         module AStar {
@@ -3886,7 +3886,7 @@ declare module Phaser {
         multiply(x: number, y: number): Phaser.Point;
         multiplyAdd(a: Phaser.Point, b: Phaser.Point, s: number, out?: Phaser.Point): Phaser.Point;
         negative(a: Phaser.Point, out?: Phaser.Point): Phaser.Point;
-        normalize(a: Phaser.Point, out?: Phaser.Point): Phaser.Point;
+        normalize(): Phaser.Point;
         normalRightHand(a: Phaser.Point, out?: Phaser.Point): Phaser.Point;
         perp(a: Phaser.Point, out?: Phaser.Point): Phaser.Point;
         project(a: Phaser.Point, b: Phaser.Point, out?: Phaser.Point): Phaser.Point;
@@ -4657,11 +4657,11 @@ declare module Phaser {
         currentLayer: number;
         debugMap: any[];
         format: number;
-        game: Phaser.Game; 
+        game: Phaser.Game;
         height: number;
         heightInPixels: number;
         images: any[];
-        key: string; 
+        key: string;
         layer: Phaser.TilemapLayer[];
         layers: Object[];
         objects: any[];
