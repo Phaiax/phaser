@@ -1188,10 +1188,11 @@ declare module Phaser {
         render(): void;
         replaceRGB(r1: number, g1: number, b1: number, a1: number, r2: number, g2: number, b2: number, a2: number, region: Phaser.Rectangle): void;
         resize(width: number, height: number): void;
-        shiftHSL(h?: number, s?: number, l?: number, region?: Phaser.Rectangle): void;
         setHSL(h?: number, s?: number, l?: number, region?: Phaser.Rectangle): void;
         setPixel(x: number, y: number, red: number, green: number, blue: number, immediate?: boolean): void;
         setPixel32(x: number, y: number, red: number, green: number, blue: number, alpha: number, immediate?: boolean): void;
+        shiftHSL(h?: number, s?: number, l?: number, region?: Phaser.Rectangle): void;
+        update(x?: number, y?: number, width?: number, height?: number);
 
     }
 
