@@ -5259,7 +5259,8 @@ declare module p2 {
         projectOntoWorldAxis(localAxis: number[], shapeOffset: number[], shapeAngle: number, result: number[]): void;
 
         updateCenterOfMass(): void;
-
+        updateTriangles(): void;
+        updateArea(): void;
     }
 
     export class Heightfield extends Shape {
