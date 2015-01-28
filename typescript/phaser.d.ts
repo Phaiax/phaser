@@ -5247,7 +5247,7 @@ declare module p2 {
 
         static triangleArea(a: number[], b: number[], c: number[]): number;
 
-        constructor(vertices: number[][], axes: number[]);
+        constructor(vertices: number[][], axes?: number[]);
 
         vertices: number[][];
         axes: number[];
